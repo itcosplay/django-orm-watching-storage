@@ -29,7 +29,12 @@ class Visit(models.Model):
 
     def get_duration(self):
         entered_at = localtime(self.entered_at)
-        now = localtime()
+        
+        if self.leaved_at == None:
+            now = localtime()
+        else:
+            now = self.leaved_at
+
         delta = now - entered_at
         tot_seconds = delta.total_seconds()
 
