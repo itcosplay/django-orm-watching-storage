@@ -37,10 +37,14 @@ class Visit(models.Model):
 
     def format_duration(self):
         duration = self.get_duration()
-        print('we are venom')
 
         hours = int(duration // 3600)
         minutes = int(duration % 3600 // 60)
         seconds = int(duration % 3600 % 60)
 
         return f'{hours}:{minutes}:{seconds}'
+
+    def is_visit_long(self):
+        duration = self.get_duration()
+
+        return duration > 3600
