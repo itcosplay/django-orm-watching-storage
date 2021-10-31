@@ -13,5 +13,5 @@ pip install -r requirements.txt
 ```
 * Запускаем отладочный сервер
 ```
-python manage.py runserver
+python main.py
 ```
