@@ -30,15 +30,15 @@ class Visit(models.Model):
     def get_duration(self):
         entered_at = localtime(self.entered_at)
         
-        if self.leaved_at == None:
+        if self.leaved_at is None:
             now = localtime()
         else:
             now = self.leaved_at
 
         delta = now - entered_at
-        tot_seconds = delta.total_seconds()
+        duration = delta.total_seconds()
 
-        return tot_seconds
+        return duration
 
     def format_duration(self):
         duration = self.get_duration()
