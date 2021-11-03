@@ -5,11 +5,14 @@
 Python 3.0 (или выше) должен быть уже установлен.  
   
 Переменная окружения для БД:  
-`DATABASE_URL = postgres://USER:PASSWORD@HOST:PORT/NAME`  
-   
-Также необходима переменная `SECRET_KEY = 'somesecretword'`
-
-`ALLOWED_HOSTS = .localhost,127.0.0.1`
+```
+DATABASE_URL = postgres://USER:PASSWORD@HOST:PORT/NAME`
+```
+Также необходимы переменные 
+```
+SECRET_KEY = 'somesecretword'
+ALLOWED_HOSTS = .localhost,127.0.0.1
+```
 
 ### Как установить
 * Клонируем репозиторий
