@@ -5,18 +5,18 @@
 Python 3.0 (или выше) должен быть уже установлен.  
   
 Требуемые переменные окружения для БД:  
-USER  
-PASSWORD   
-HOST   
-PORT   
-NAME
+`USER`  
+`PASSWORD`   
+`HOST`   
+`PORT`   
+`NAME`
   
 Переменные для БД хранятся в .env в формате:  
-DATABASE_URL = postgres://USER:PASSWORD@HOST:PORT/NAME  
+`DATABASE_URL = postgres://USER:PASSWORD@HOST:PORT/NAME`  
   
-Также необходима переменная SECRET_KEY = 'somesecretword'
+Также необходима переменная `SECRET_KEY = 'somesecretword'`
 
-ALLOWED_HOSTS = .localhost,127.0.0.1
+`ALLOWED_HOSTS = .localhost,127.0.0.1`
 
 ### Как установить
 * Клонируем репозиторий
